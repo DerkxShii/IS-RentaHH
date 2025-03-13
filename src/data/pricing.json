@@ -1,0 +1,42 @@
+{
+  "title": "Comparación Clara y Transparente",
+  "subTitle": "Descubre por qué nuestra oferta de reparación y mantenimiento de handhelds se destaca frente a la competencia.",
+  "badge": "Mejor opción",
+  "thirdOption": "¿Soluciones Personalizadas?",
+  "btnText": "Obtén una Cotización Personalizada",
+
+  "starterKit": {
+    "name": "Competencia",
+    "description": "Lo que otros ofrecen",
+    "cents": "",
+    "billingFrequency": "",
+    "features": [
+      "Soporte limitado y tiempos de espera",
+      "Tarifas elevadas sin valor agregado",
+      "Garantía limitada o inexistente",
+      "Soporte básico sin opciones personalizadas",
+      "No disponible para mantenimiento preventivo",
+      "No incluye equipos de reemplazo"
+    ],
+    "purchaseBtnTitle": "/contact",
+    "purchaseLink": "/contact"
+  },
+
+  "professionalToolbox": {
+    "name": "Nosotros",
+    "description": "Lo que te ofrecemos",
+    "price": "",
+    "cents": "",
+    "billingFrequency": "",
+    "features": [
+      "Servicio técnico especializado y respuesta rápida",
+      "Precios competitivos con beneficios adicionales",
+      "Garantía extendida en todas las reparaciones",
+      "Soporte técnico integral y atención prioritaria",
+      "Planes de mantenimiento preventivo para evitar fallas",
+      "Disponibilidad de equipos de reemplazo durante reparaciones"
+    ],
+    "purchaseBtnTitle": "Elige la Mejor Opción",
+    "purchaseLink": "/products"
+  }
+}

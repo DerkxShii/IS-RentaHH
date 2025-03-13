@@ -13,62 +13,47 @@ type FeatureProps = {
 };
 const features = [
   {
-    title: "Advanced Analytics",
+    title: "Ahorro en inversión",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   },
   {
-    title: "Targeted Ad Campaigns",
+    title: "Visita previa",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   },
   {
-    title: "Content Calendar Management",
+    title: "Configuración personalizada",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   },
   {
-    title: "Influencer Collaborations",
+    title: "Soporte constante",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   },
   {
-    title: "Customized Reporting",
+    title: "Beneficio fiscal",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   },
   {
-    title: "A/B Testing",
+    title: "Respaldo",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   },
   {
-    title: "Social Listening",
+    title: "Mejores opciones",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   },
   {
-    title: "Trend Analysis",
+    title: "Mantenimiento previo",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   },
   {
-    title: "24/7 Customer Support",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-  },
-  {
-    title: "Cross-Platform Integration",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-  },
-  {
-    title: "Dynamic Content Personalization",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-  },
-  {
-    title: "Competitor Analysis and Benchmarking",
+    title: "Soporte telefónico",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   },
@@ -82,24 +67,23 @@ const { className } = Astro.props;
 ---
 
 <section id="features" class=`${className}`>
-  <Container className="">
+  <Container className="lg:px-52 md:px-20 sm:pl-10 sm:pr-10">
     <div class="text-center max-w-3xl mx-auto">
       <Title>
-        We provide <GradiantText>Important <br />Features</GradiantText> for Digital
-        Marketing
+        <GradiantText><br />Beneficios de Renta</GradiantText>
       </Title>
     </div>
-    <div class="flex flex-row flex-wrap mt-8">
+    <div class="flex flex-row flex-wrap mt-8 py-4">
       <!-- <div class="flex flex-col lg:gap-10 lg:gap-12 midmd:flex-row mt-8"> -->
       <!-- <div class="flex  lg:w-1/2 flex-row"> -->
       {
         features.map((feature: FeatureProps) => {
           return (
-            <div class="flex items-center text-heading-3 font-medium basis-full md:basis-1/2 lg:basis-1/3">
+            <div class="flex items-center text-heading-3 font-medium basis-full basis-1/2 md:basis-1/2 lg:basis-1/3">
               <span class="font-bold rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">
                 &checkmark;
               </span>
-              {feature.title}
+              <span class="text-xl md:text-xl lg:text-xl">{feature.title}</span>
             </div>
           );
         })

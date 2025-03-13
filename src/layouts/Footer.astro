@@ -6,81 +6,91 @@ import Paragraph from "../components/shared/Paragraph.astro";
 
 const footerNav1 = [
   {
-    itemText: "Marketing",
+    itemText: "MC9190",
     itemLink: "#",
   },
   {
-    itemText: "Analylitics",
+    itemText: "MC3300",
     itemLink: "#",
   },
   {
-    itemText: "Commerce",
+    itemText: "MC9300",
     itemLink: "#",
   },
   {
-    itemText: "Insights",
+    itemText: "TC70X",
+    itemLink: "#",
+  },
+  {
+    itemText: "TC72X",
+    itemLink: "#",
+  },
+  {
+    itemText: "CK65",
     itemLink: "#",
   },
 ];
 
 const footerSupport = [
   {
-    itemText: "Pricing",
+    itemText: "QLN220",
     itemLink: "#",
   },
   {
-    itemText: "Guides",
+    itemText: "QLN320",
     itemLink: "#",
   },
   {
-    itemText: "FAQ",
+    itemText: "QLN420",
     itemLink: "#",
   },
   {
-    itemText: "Contact",
+    itemText: "QLN630",
     itemLink: "#",
+  
+  },
+  {
+    itemText: "EDA51",
+    itemLink: "#",
+  
   },
 ];
 
 const footerCompany = [
   {
-    itemText: "About",
+    itemText: "Proceso",
     itemLink: "#",
   },
   {
-    itemText: "Blog",
+    itemText: "Beneficios",
     itemLink: "#",
   },
   {
-    itemText: "Jobs",
+    itemText: "Catálogo",
     itemLink: "#",
   },
   {
-    itemText: "Parteners",
-    itemLink: "#",
-  },
-  {
-    itemText: "Jobs",
+    itemText: "Más información",
     itemLink: "#",
   },
 ];
 const footerLegal = [
   {
-    itemText: "Claim",
+    itemText: "Oriente 237 No. 492, Colonia Agrícola Oriental, Delegación Iztacalco, Ciudad de México",
     itemLink: "#",
   },
   {
-    itemText: "Privacy",
+    itemText: "contacto@intelisystems.net",
     itemLink: "#",
   },
   {
-    itemText: "Terms",
+    itemText: "+52 55 5701 4315",
     itemLink: "#",
   },
 ];
 ---
 
-<div class="relative mt-16">
+<div class="relative">
   <span
     class="w-20 h-20 rounded-full bg-gradient-to-br from-sky-500 from-0% via-primary via-80% to-green-600 to-110% absolute left-1/3 bottom-1/3"
   ></span>
@@ -100,7 +110,7 @@ const footerLegal = [
   <footer
     class="relative bg-gradient-to-tr from-slate-100/85 to-zinc-200/85 dark:from-slate-800/85 dark:to-zinc-800/85 pt-28 rounded-t-3xl backdrop-blur-md"
   >
-    <Container className="pb-8 relative overflow-auto ">
+    <Container className="pb-8 relative overflow-auto px-16 sm:pt-12">
       <div
         class="grid grid-cols-2 lg:grid-cols-3 lg:items-stretch gap-8 relative"
       >
@@ -108,12 +118,11 @@ const footerLegal = [
           <div class="h-full">
             <a href="#" class="relative flex items-center gap-3">
               <div class="inline-flex text-lg font-semibold text-heading-1">
-                AgenceX
+                HandHeld Repair | InteliSystems
               </div>
             </a>
             <Paragraph className={"mt-8"}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-              maiores nam doloribus id magni
+              Nos dedicamos a la venta, renta y reparación de equipo de cómputo móvil, lectores e impresoras de códigos de barras, así como el desarrollo de aplicaciones para estos dispositivos.
             </Paragraph>
           </div>
 
@@ -186,30 +195,23 @@ const footerLegal = [
         </div>
 
         <GroupFooterNav>
-          <FooterNav title={"Company"} navItems={footerCompany} />
-          <FooterNav title={"Solutions"} navItems={footerNav1} />
+          <FooterNav title={"Servicios"} navItems={footerCompany} />
+          <FooterNav title={"Productos"} navItems={footerNav1} />
         </GroupFooterNav>
 
         <GroupFooterNav>
-          <FooterNav title={"Support"} navItems={footerSupport} />
-          <FooterNav title={"Ressources"} navItems={footerLegal} />
+          <FooterNav title={"Productos"} navItems={footerSupport} />
+          <FooterNav title={"Contacto"} navItems={footerLegal} />
         </GroupFooterNav>
       </div>
     </Container>
     <div class="py-2 relative">
       <Container>
         <div
-          class="flex justify-between items-center gap-6 md:text-lg text-heading-3"
+          class="flex ml-16 justify-left items-center gap-6 md:text-lg text-heading-3"
         >
           <div>
-            &copy; <span id="year"></span> AgenceX. All right reserved
-          </div>
-          <div>
-            Made by <a
-              href="https://github.com/vbartalis"
-              target="_blank"
-              class="font-semibold">vbartalis</a
-            >
+            <a href="https://intelisystems.net/aviso_privacidad.html">Aviso de Privacidad</a>
           </div>
         </div>
       </Container>

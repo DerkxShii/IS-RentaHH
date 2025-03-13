@@ -1,36 +1,54 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/sections/Hero.astro";
-import Brands from "../components/sections/Brands.astro";
+import Carrusel from "../components/sections/react/marcas";
 import Services from "../components/sections/Services.astro";
 import FAQ from "../components/sections/FAQ.astro";
 import Features from "../components/sections/Features.astro";
 import CTA from "../components/sections/CTA.astro";
 import Solutions from "../components/sections/Solutions.astro";
+import Products from "@src/components/sections/Products.astro";
+import Container from "@src/components/shared/Container.astro";
+import PricingSection from "@src/components/sections/PricingSection.astro";
+import pricing from "@src/data/pricing.json";
 ---
 
 <Layout title="Welcome to the Agency template">
   <main class="flex flex-col overflow-hidden">
-    <Hero className="py-10 md:py-16" />
-    <Solutions className="pt-10 md:pt-16" />
-    <Services className="py-10 md:py-16" />
-    <Brands className="py-10 md:py-16" />
-    <Features className="py-10 md:py-16" />
-    <FAQ className="py-10 md:py-16" />
+    <Hero className="pt-10 md:pt-32 pb-2" />
+    <!-- <Solutions className="pt-10 md:pt-16" /> -->
+    <section
+      id="products"
+      class=`relative mt-10 dark:bg-gradient-to-br dark:from-indigo-800 dark:to-green-950`
+    >
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-sky-200 dark:from-sky-500 from-0% via-primary dark:via-primary via-80% to-green-400 dark:to-green-600 to-110%
+      absolute left-1/3 bottom-1/3"
+      ></span>
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-yellow-200 dark:from-yellow-400 from-0% via-sky-500 dark:via-sky-700 via-85% to-primary dark:to-primary to-100%
+      absolute right-1/4 bottom-0"
+      ></span>
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-green-300 dark:from-green-500 from-0% via-primary dark:via-primary via-80% to-sky-400 dark:to-sky-600 to-110%
+      absolute right-1/3 top-1/3"
+      ></span>
+
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-green-300 dark:from-green-500 from-0% via-primary dark:via-primary via-80% to-sky-400 dark:to-sky-600 to-110%
+      absolute right-3/4 top-1/3"
+      ></span>
+
+      <Container className="py-40">
+        <Products />
+      </Container>
+    </section>
+
+    <Features className="py-1 md:py-2" />
+    <PricingSection pricing={pricing} />
+    <Services className="py-4 md:py-8" />
+    <Carrusel client:load />
+    <FAQ className="py-6 md:py-8" />
     <CTA className="py-10 md:py-16" />
-    <!-- Hero -->
-    <!-- headline, subheading, image, cta button, results -->
-    <!-- Problems/Solutions -->
-    <!-- title, painpoint, aggitate pain, introduce solution, video  -->
-    <!-- Benefits/Services -->
-    <!-- benefit title, thanks to features, visual -->
-    <!-- Testimonials/Brands -->
-    <!-- reviews, partners -->
-    <!-- Features -->
-    <!-- ~10 features, more technical than emotional, in a list -->
-    <!-- FAQ -->
-    <!-- questions, answers, video -->
-    <!-- CTA -->
-    <!-- Question, button -->
   </main>
 </Layout>
