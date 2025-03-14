@@ -60,9 +60,15 @@ export default function Carrusel() {
 
   return (
     <section className="mt-10 mx-auto w-full ma x-w-6xl px-10 py-20 sm:py-32 lg:px-10 lg:py-20 dark:bg-gray-900 dark:bg-opacity-50">
-      <h1 className="text-center mb-8 text-heading-1 font-semibold text-2xl sm:text-3xl md:text-4xl">
-        Marcas que confían en <span className="text-[#007aff]">Nosotros</span>
-      </h1>
+      <div className="text-center max-w-5xl mx-auto pb-12">
+        <h1 className="text-heading-1 font-bold text-3xl sm:text-4xl md:text-5xl pb-6">
+          <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#29628d] from-20% via-[#29628d] via-30% to-[#29628d] dark:from-[#ffffff] dark:via-[#ffffff] dark:to-[#ffffff]">
+            MARCAS
+          </span>{" "}
+          QUE CONFIAN EN NOSOTROS
+        </h1>
+      </div>
+
       <ScrollingBanner shouldPauseOnHover gap="75px">
         {logos.map(({ key, logo }) => (
           <div

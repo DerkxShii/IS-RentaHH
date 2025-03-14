@@ -7,85 +7,89 @@ import Paragraph from "../components/shared/Paragraph.astro";
 const footerNav1 = [
   {
     itemText: "MC9190",
-    itemLink: "#",
+    itemLink: "#products",
   },
   {
     itemText: "MC3300",
-    itemLink: "#",
+    itemLink: "#products",
   },
   {
     itemText: "MC9300",
-    itemLink: "#",
+    itemLink: "#products",
   },
   {
     itemText: "TC70X",
-    itemLink: "#",
+    itemLink: "#products",
   },
   {
     itemText: "TC72X",
-    itemLink: "#",
+    itemLink: "#products",
   },
   {
     itemText: "CK65",
-    itemLink: "#",
+    itemLink: "#products",
   },
 ];
 
 const footerSupport = [
   {
     itemText: "QLN220",
-    itemLink: "#",
+    itemLink: "#products",
   },
   {
     itemText: "QLN320",
-    itemLink: "#",
+    itemLink: "#products",
   },
   {
     itemText: "QLN420",
-    itemLink: "#",
+    itemLink: "#products",
   },
   {
     itemText: "QLN630",
-    itemLink: "#",
-  
+    itemLink: "#products",
   },
   {
     itemText: "EDA51",
-    itemLink: "#",
-  
+    itemLink: "#products",
+  },
+  {
+    itemText: "Más información",
+    itemLink: "https://intelisystems.mx/products/",
   },
 ];
 
 const footerCompany = [
   {
-    itemText: "Proceso",
-    itemLink: "#",
+    itemText: "Inicio",
+    itemLink: "/",
+  },
+  {
+    itemText: "Productos",
+    itemLink: "#products",
   },
   {
     itemText: "Beneficios",
-    itemLink: "#",
+    itemLink: "#features",
   },
   {
-    itemText: "Catálogo",
-    itemLink: "#",
-  },
-  {
-    itemText: "Más información",
-    itemLink: "#",
+    itemText: "Proceso",
+    itemLink: "#services",
   },
 ];
 const footerLegal = [
   {
-    itemText: "Oriente 237 No. 492, Colonia Agrícola Oriental, Delegación Iztacalco, Ciudad de México",
-    itemLink: "#",
+    itemText:
+      "Oriente 237 No. 492, Colonia Agrícola Oriental, Delegación Iztacalco, Ciudad de México",
+    itemLink: "https://maps.app.goo.gl/iqgb9LWXrMmJdSYEA",
   },
   {
-    itemText: "contacto@intelisystems.net",
-    itemLink: "#",
+    itemText: "contacto@handheldrepair.com.mx",
+    itemLink:
+      "mailto:contacto@handheldrepair.com.mx?Subject=Informaci%C3%B3n%20sobre%20los%20servicio%20de%20Renta,%20Venta%20y%20Reparaci%C3%B3n.",
   },
   {
     itemText: "+52 55 5701 4315",
-    itemLink: "#",
+    itemLink: "tel:5557014315",
   },
 ];
 ---
@@ -122,73 +126,92 @@ const footerLegal = [
               </div>
             </a>
             <Paragraph className={"mt-8"}>
-              Nos dedicamos a la venta, renta y reparación de equipo de cómputo móvil, lectores e impresoras de códigos de barras, así como el desarrollo de aplicaciones para estos dispositivos.
+              Nos dedicamos a la venta, renta y reparación de equipo de cómputo
+              móvil, lectores e impresoras de códigos de barras, así como el
+              desarrollo de aplicaciones para estos dispositivos.
             </Paragraph>
           </div>
 
           <!-- social links -->
-          <div class="min-h-max flex items-center gap-4 text-heading-3 mt-8">
-            <a href="#" class="transition hover:text-heading-1 hover:scale-105">
+          <div
+            class="min-h-max h-full flex items-center gap-8 text-heading-3 mt-8"
+          >
+            <a
+              href="https://www.facebook.com/IntelisystemsMx/"
+              class="transition hover:text-heading-1 hover:scale-105"
+            >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                stroke="currentColor"
                 fill="currentColor"
-                class="w-5 h-5"
-                viewBox="0 0 16 16"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="1.5em"
+                width="1.5em"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                ></path></svg
               >
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                ></path>
-              </svg>
               <span class="sr-only">social link</span>
             </a>
 
-            <a href="#" class="transition hover:text-heading-1 hover:scale-105">
+            <a
+              href="https://www.instagram.com/inteli__systems/"
+              class="transition hover:text-heading-1 hover:scale-105"
+            >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                stroke="currentColor"
                 fill="currentColor"
-                class="w-5 h-5"
-                viewBox="0 0 16 16"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="1.5em"
+                width="1.5em"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+                ></path><path
+                  d="M377.33 162.67a28 28 0 1 1 28-28 27.94 27.94 0 0 1-28 28zM256 181.33A74.67 74.67 0 1 1 181.33 256 74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112 112 112 0 0 0-112-112z"
+                ></path></svg
               >
-                <path
-                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                ></path>
-              </svg>
               <span class="sr-only">social link</span>
             </a>
 
-            <a href="#" class="transition hover:text-heading-1 hover:scale-105">
+            <a
+              href="https://www.youtube.com/@intelisystemsmx5271"
+              class="transition hover:text-heading-1 hover:scale-105"
+            >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                stroke="currentColor"
                 fill="currentColor"
-                class="w-5 h-5"
-                viewBox="0 0 16 16"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="1.5em"
+                width="1.5em"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z"
+                ></path></svg
               >
-                <path
-                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                ></path>
-              </svg>
               <span class="sr-only">social link</span>
             </a>
 
-            <a href="#" class="transition hover:text-heading-1 hover:scale-105">
+            <a
+              href="https://www.linkedin.com/company/intelisystemsmx/"
+              class="transition hover:text-heading-1 hover:scale-105"
+            >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                stroke="currentColor"
                 fill="currentColor"
-                class="w-5 h-5"
-                viewBox="0 0 16 16"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="1.5em"
+                width="1.5em"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"
+                ></path></svg
               >
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                ></path>
-              </svg>
               <span class="sr-only">social link</span>
             </a>
           </div>
@@ -211,7 +234,9 @@ const footerLegal = [
           class="flex ml-16 justify-left items-center gap-6 md:text-lg text-heading-3"
         >
           <div>
-            <a href="https://intelisystems.net/aviso_privacidad.html">Aviso de Privacidad</a>
+            <a href="https://intelisystems.net/aviso_privacidad.html"
+              >Aviso de Privacidad</a
+            >
           </div>
         </div>
       </Container>
