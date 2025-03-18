@@ -1,14 +1,16 @@
 ---
 import "swiper/css/bundle";
+import GradiantText from "../shared/GradiantText.astro";
+import Title from "../shared/Title.astro";
 ---
 
 <div class="wrapper">
+  <div class="text-center max-w-full mx-auto py-2 pb-8">
+    <Title> CONOCE <GradiantText>NUESTROS PRODUCTOS</GradiantText></Title>
+  </div>
   <div class="content">
     <div class="bg-shape">
-      <img
-        src="https://www.rentahandheld.com/img/handhelds/LOGO%20HANDHELD%20REPAIR_black.svg"
-        alt=""
-      />
+      <img src="/src/assets/images/LOGO HANDHELD REPAIR_black.svg" alt="" />
     </div>
 
     <div class="product-img">
@@ -126,7 +128,7 @@ import "swiper/css/bundle";
           <div class="product-slider__card">
             <div class="overlay"></div>
             <img
-              src="https://www.rentahandheld.com/img/Fondos/fondo1.webp"
+              src="/src/assets/images/Fondos/fondo1.webp"
               alt="star wars"
               class="product-slider__cover"
             />
@@ -137,19 +139,25 @@ import "swiper/css/bundle";
                 <section class="properties">
                   <div>
                     <div class="box-icon">
-                      <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/android_ht730.svg"
-                        alt="icono sobre características del producto"
-                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50px"
+                        height="50px"
+                        viewBox="0 0 24 24"
+                        ><path
+                          fill="#ffffff"
+                          d="m3 5.549l7.195-.967v7.029l-7.188.054zm7.195 6.842v7.105l-7.19-.985v-6.12zm.918-7.935L20.998 3v8.533l-9.885.078zM21 12.505L20.998 21l-9.885-1.353v-7.142z"
+                        ></path></svg
+                      >
                     </div>
                     <p style="margin-block-start: 0em;margin-block-end: 0em;">
-                      Android
+                      Windows
                     </p>
                   </div>
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/ip67_ht730.svg"
+                        src="/src/assets/images/iconshandheld/ip67_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -160,7 +168,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/logistica_ht730.svg"
+                        src="/src/assets/images/iconshandheld/logistica_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -171,7 +179,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/almacen_ht730.svg"
+                        src="/src/assets/images/iconshandheld/almacen_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -182,7 +190,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/Bluetooth_ht730.svg"
+                        src="/src/assets/images/iconshandheld/Bluetooth_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -193,7 +201,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/qr.svg"
+                        src="/src/assets/images/iconshandheld/qr.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -204,7 +212,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/Keyboard_HT730.svg"
+                        src="/src/assets/images/iconshandheld/Keyboard_HT730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -215,7 +223,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/Certificado GMS_HT730.svg"
+                        src="/src/assets/images/iconshandheld/Certificado GMS_HT730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -245,7 +253,7 @@ import "swiper/css/bundle";
           <div class="product-slider__card">
             <div class="overlay"></div>
             <img
-              src="https://www.rentahandheld.com/img/Fondos/fondo2.webp"
+              src="/src/assets/images/Fondos/fondo2.webp"
               alt="star wars"
               class="product-slider__cover"
             />
@@ -256,21 +264,21 @@ import "swiper/css/bundle";
                   <!-- dos -->
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/connectivity.svg"
+                      src="/src/assets/images/iconshandheld/connectivity.svg"
                       alt=""
                     />
                     <p>Conexiones inalámbricas</p>
                   </div>
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/Ram.svg"
+                      src="/src/assets/images/iconshandheld/Ram.svg"
                       alt=""
                     />
                     <p>Robusta memoria</p>
                   </div>
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/CPU.svg"
+                      src="/src/assets/images/iconshandheld/CPU.svg"
                       alt=""
                     />
                     <p>Procesador ARM de 400</p>
@@ -278,21 +286,21 @@ import "swiper/css/bundle";
                   <!-- Uno -->
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/androidfree.svg"
+                      src="/src/assets/images/iconshandheld/androidfree.svg"
                       alt=""
                     />
                     <p>Conectividad Android</p>
                   </div>
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/bigScreen.svg"
+                      src="/src/assets/images/iconshandheld/bigScreen.svg"
                       alt=""
                     />
                     <p>Pantalla grande y fácil de leer</p>
                   </div>
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/bateria.svg"
+                      src="/src/assets/images/iconshandheld/bateria.svg"
                       alt=""
                     />
                     <p>Batería de alta capacidad</p>
@@ -319,15 +327,13 @@ import "swiper/css/bundle";
           <div class="product-slider__card">
             <div class="overlay"></div>
             <img
-              src="https://www.rentahandheld.com/img/Fondos/fondo3.webp"
+              src="/src/assets/images/Fondos/fondo3.webp"
               alt="star wars"
               class="product-slider__cover"
               style="width: 120%; height: auto; "
             />
             <div class="product-slider__content">
-              <h1 class="product-slider__title" style="font-size: 2.5em;">
-                MC9300 | HandHeld
-              </h1>
+              <h1 class="product-slider__title">MC9300 | HandHeld</h1>
               <div class="list-div-styles">
                 <div
                   style="width: 100%;   
@@ -337,9 +343,9 @@ import "swiper/css/bundle";
                   class="mb-8 mt-12"
                 >
                   <h3 style="font-size: 1.5em;">Android</h3>
-                  <h2 style="font-size: 1.5em;">9.0</h2>
+                  <h2 style="font-size: 1.5em;">13.0</h2>
                   <img
-                    src="https://rentahandheld.com/img/iconshandheld/android_ht730.svg"
+                    src="/src/assets/images/iconshandheld/android_ht730.svg"
                     alt=""
                     style="width: 50px; height: auto;"
                   />
@@ -354,7 +360,7 @@ import "swiper/css/bundle";
                   <h3 style="font-size: 1.5em;">Display</h3>
                   <h2 style="font-size: 1.5em;">5.45"</h2>
                   <img
-                    src="https://rentahandheld.com/img/iconshandheld/Display_EA520.svg"
+                    src="/src/assets/images/iconshandheld/Display_EA520.svg"
                     alt=""
                     style="width: 50px; height: auto;"
                   />
@@ -369,7 +375,7 @@ import "swiper/css/bundle";
                   <h3 style="font-size: 1.5em;">CPU</h3>
                   <h2 style="font-size: 1.5em;">Snapdragon</h2>
                   <img
-                    src="https://rentahandheld.com/img/iconshandheld/Snapdragon.svg"
+                    src="/src/assets/images/iconshandheld/Snapdragon.svg"
                     alt=""
                     style="width: 50px; height: auto;"
                   />
@@ -395,7 +401,7 @@ import "swiper/css/bundle";
           <div class="product-slider__card">
             <div class="overlay"></div>
             <img
-              src="https://www.rentahandheld.com/img/Fondos/fondo4.webp"
+              src="/src/assets/images/Fondos/fondo4.webp"
               alt="star wars"
               class="product-slider__cover"
             />
@@ -415,7 +421,10 @@ import "swiper/css/bundle";
               >
                 TC70X | HandHeld
               </h1>
-              <div class="heldContainer" style="justify-content: space-evenly;">
+              <div
+                class="heldContainer"
+                style="justify-content: space-evenly; gap-20"
+              >
                 <div
                   class="spects"
                   style="height: 100%;width: 100%; font-size: 1.25em;"
@@ -436,7 +445,7 @@ import "swiper/css/bundle";
                         style="display: flex;width: 35%;/* flex-direction: column; */justify-content: space-between;"
                       >
                         Android
-                        <span>8.1</span>
+                        <span>11.0</span>
                       </li>
                       <li
                         style="display: flex;width: 35%;/* flex-direction: column; */justify-content: space-between;"
@@ -465,7 +474,7 @@ import "swiper/css/bundle";
                   <div class="icons mt-12 sm:mt-4" style="font-size: 1.15em;">
                     <div style="display: flex;align-items: center; gap:12%">
                       <img
-                        src="https://rentahandheld.com/img/iconshandheld/CT60_GoogleMobileService.svg"
+                        src="/src/assets/images/iconshandheld/CT60_GoogleMobileService.svg"
                         alt=""
                         style="height: auto; width: 25%"
                       />
@@ -477,7 +486,7 @@ import "swiper/css/bundle";
                     </div>
                     <div style="display: flex;align-items: center; gap:12%">
                       <img
-                        src="https://rentahandheld.com/img/iconshandheld/CT_Android Enterprise.svg"
+                        src="/src/assets/images/iconshandheld/CT_Android Enterprise.svg"
                         alt=""
                         style="height: auto; width: 25%"
                       />
@@ -489,7 +498,7 @@ import "swiper/css/bundle";
                     </div>
                     <div style="display: flex;align-items: center; gap:12%">
                       <img
-                        src="https://rentahandheld.com/img/iconshandheld/CT_SIM Card.svg"
+                        src="/src/assets/images/iconshandheld/CT_SIM Card.svg"
                         alt=""
                         style="height: auto; width: 25%"
                       />
@@ -497,7 +506,7 @@ import "swiper/css/bundle";
                     </div>
                     <div style="display: flex;align-items: center; gap:12%">
                       <img
-                        src="https://rentahandheld.com/img/iconshandheld/qr.svg"
+                        src="/src/assets/images/iconshandheld/qr.svg"
                         alt=""
                         style="height: auto; width: 25%"
                       />
@@ -508,7 +517,7 @@ import "swiper/css/bundle";
               </div>
               <div class="product-slider__bottom">
                 <a href="https://intelisystems.mx/products/"
-                  ><button class="product-slider__cart">
+                  ><button class="product-slider__cart mt-36 sm:mt-0">
                     Más Información</button
                   ></a
                 >
@@ -530,19 +539,19 @@ import "swiper/css/bundle";
               class="product-slider__cover"
             />
             <div class="product-slider__content">
-              <h1 class="product-slider__title">TC72X | HandHeld</h1>
+              <h1 class="product-slider__title">TC72 | HandHeld</h1>
               <div class="Section-spects mt-20 sm:mt-0">
                 <section class="flexchild">
                   <div class="div-box-card">
                     <p style="font-size: 1.5em;">Android 11</p><img
-                      src="https://rentahandheld.com/img/iconshandheld/CT_Android Enterprise.svg"
+                      src="/src/assets/images/iconshandheld/CT_Android Enterprise.svg"
                       alt=""
                       style="width: 70px; height: auto;"
                     />
                   </div>
                   <div class="div-box-card">
                     <p style="font-size: 1.5em;">Retail</p><img
-                      src="https://rentahandheld.com/img/iconshandheld/Retail_EA520.svg"
+                      src="/src/assets/images/iconshandheld/Retail_EA520.svg"
                       alt=""
                       style="width: 90px; height: auto;"
                     />
@@ -551,14 +560,14 @@ import "swiper/css/bundle";
                 <section class="flexchild">
                   <div class="div-box-card">
                     <p style="font-size: 1.5em;">Display 5"</p><img
-                      src="https://rentahandheld.com/img/iconshandheld/Display_EA520.svg"
+                      src="/src/assets/images/iconshandheld/Display_EA520.svg"
                       alt=""
                       style="width: 70px; height: auto;"
                     />
                   </div>
                   <div class="div-box-card">
                     <p style="font-size: 1.5em;">2D</p><img
-                      src="https://rentahandheld.com/img/iconshandheld/qr.svg"
+                      src="/src/assets/images/iconshandheld/qr.svg"
                       alt=""
                       style="width: 90px; height: auto;"
                     />
@@ -586,7 +595,7 @@ import "swiper/css/bundle";
           <div class="product-slider__card">
             <div class="overlay"></div>
             <img
-              src="https://www.rentahandheld.com/img/Fondos/fondo6.webp"
+              src="/src/assets/images/Fondos/fondo6.webp"
               alt="star wars"
               class="product-slider__cover"
             />
@@ -601,9 +610,9 @@ import "swiper/css/bundle";
                   class="mb-8 mt-12"
                 >
                   <h3 style="font-size: 1.5em;">Android</h3>
-                  <h2 style="font-size: 1.5em;">9.0</h2>
+                  <h2 style="font-size: 1.5em;">13.0</h2>
                   <img
-                    src="https://rentahandheld.com/img/iconshandheld/android_ht730.svg"
+                    src="/src/assets/images/iconshandheld/android_ht730.svg"
                     alt=""
                     style="width: 50px; height: auto;"
                   />
@@ -618,7 +627,7 @@ import "swiper/css/bundle";
                   <h3 style="font-size: 1.5em;">Display</h3>
                   <h2 style="font-size: 1.5em;">5.45"</h2>
                   <img
-                    src="https://rentahandheld.com/img/iconshandheld/Display_EA520.svg"
+                    src="/src/assets/images/iconshandheld/Display_EA520.svg"
                     alt=""
                     style="width: 50px; height: auto;"
                   />
@@ -633,7 +642,7 @@ import "swiper/css/bundle";
                   <h3 style="font-size: 1.5em;">CPU</h3>
                   <h2 style="font-size: 1.5em;">Snapdragon</h2>
                   <img
-                    src="https://rentahandheld.com/img/iconshandheld/Snapdragon.svg"
+                    src="/src/assets/images/iconshandheld/Snapdragon.svg"
                     alt=""
                     style="width: 50px; height: auto;"
                   />
@@ -659,7 +668,7 @@ import "swiper/css/bundle";
           <div class="product-slider__card">
             <div class="overlay"></div>
             <img
-              src="https://www.rentahandheld.com/img/Fondos/fondo7.webp"
+              src="/src/assets/images/Fondos/fondo7.webp"
               alt="star wars"
               class="product-slider__cover"
             />
@@ -686,7 +695,7 @@ import "swiper/css/bundle";
                         style="display: flex;width: 35%;/* flex-direction: column; */justify-content: space-between;"
                       >
                         Android
-                        <span>8.1</span>
+                        <span>11.0</span>
                       </li>
                       <li
                         style="display: flex;width: 35%;/* flex-direction: column; */justify-content: space-between;"
@@ -715,7 +724,7 @@ import "swiper/css/bundle";
                   <div class="icons mt-12 sm:mt-4" style="font-size: 1.15em;">
                     <div style="display: flex;align-items: center; gap:12%">
                       <img
-                        src="https://rentahandheld.com/img/iconshandheld/CT60_GoogleMobileService.svg"
+                        src="/src/assets/images/iconshandheld/CT60_GoogleMobileService.svg"
                         alt=""
                         style="height: auto; width: 25%"
                       />
@@ -727,7 +736,7 @@ import "swiper/css/bundle";
                     </div>
                     <div style="display: flex;align-items: center; gap:12%">
                       <img
-                        src="https://rentahandheld.com/img/iconshandheld/CT_Android Enterprise.svg"
+                        src="/src/assets/images/iconshandheld/CT_Android Enterprise.svg"
                         alt=""
                         style="height: auto; width: 25%"
                       />
@@ -739,7 +748,7 @@ import "swiper/css/bundle";
                     </div>
                     <div style="display: flex;align-items: center; gap:12%">
                       <img
-                        src="https://rentahandheld.com/img/iconshandheld/CT_SIM Card.svg"
+                        src="/src/assets/images/iconshandheld/CT_SIM Card.svg"
                         alt=""
                         style="height: auto; width: 25%"
                       />
@@ -747,7 +756,7 @@ import "swiper/css/bundle";
                     </div>
                     <div style="display: flex;align-items: center; gap:12%">
                       <img
-                        src="https://rentahandheld.com/img/iconshandheld/qr.svg"
+                        src="/src/assets/images/iconshandheld/qr.svg"
                         alt=""
                         style="height: auto; width: 25%"
                       />
@@ -759,7 +768,7 @@ import "swiper/css/bundle";
 
               <div class="product-slider__bottom">
                 <a href="https://intelisystems.mx/products/"
-                  ><button class="product-slider__cart">
+                  ><button class="product-slider__cart mt-36 sm:mt-0">
                     Más Información</button
                   ></a
                 >
@@ -776,7 +785,7 @@ import "swiper/css/bundle";
           <div class="product-slider__card">
             <div class="overlay"></div>
             <img
-              src="https://www.rentahandheld.com/img/Fondos/fondo2.webp"
+              src="/src/assets/images/Fondos/fondo2.webp"
               alt="star wars"
               class="product-slider__cover"
             />
@@ -787,7 +796,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/android_ht730.svg"
+                        src="/src/assets/images/iconshandheld/android_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -798,7 +807,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/ip67_ht730.svg"
+                        src="/src/assets/images/iconshandheld/ip67_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -809,7 +818,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/logistica_ht730.svg"
+                        src="/src/assets/images/iconshandheld/logistica_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -820,7 +829,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/almacen_ht730.svg"
+                        src="/src/assets/images/iconshandheld/almacen_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -831,7 +840,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/Bluetooth_ht730.svg"
+                        src="/src/assets/images/iconshandheld/Bluetooth_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -842,7 +851,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/qr.svg"
+                        src="/src/assets/images/iconshandheld/qr.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -853,7 +862,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/Keyboard_HT730.svg"
+                        src="/src/assets/images/iconshandheld/Keyboard_HT730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -864,7 +873,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/Certificado GMS_HT730.svg"
+                        src="/src/assets/images/iconshandheld/Certificado GMS_HT730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -894,7 +903,7 @@ import "swiper/css/bundle";
           <div class="product-slider__card">
             <div class="overlay"></div>
             <img
-              src="https://www.rentahandheld.com/img/Fondos/fondo4.webp"
+              src="/src/assets/images/Fondos/fondo4.webp"
               alt="star wars"
               class="product-slider__cover"
             />
@@ -904,14 +913,14 @@ import "swiper/css/bundle";
                 <section class="flexchild">
                   <div class="div-box-card">
                     <p style="font-size: 1.5em;">Android 11</p><img
-                      src="https://rentahandheld.com/img/iconshandheld/CT_Android Enterprise.svg"
+                      src="/src/assets/images/iconshandheld/CT_Android Enterprise.svg"
                       alt=""
                       style="width: 70px; height: auto;"
                     />
                   </div>
                   <div class="div-box-card">
                     <p style="font-size: 1.5em;">Retail</p><img
-                      src="https://rentahandheld.com/img/iconshandheld/Retail_EA520.svg"
+                      src="/src/assets/images/iconshandheld/Retail_EA520.svg"
                       alt=""
                       style="width: 90px; height: auto;"
                     />
@@ -920,14 +929,14 @@ import "swiper/css/bundle";
                 <section class="flexchild">
                   <div class="div-box-card">
                     <p style="font-size: 1.5em;">Display 5"</p><img
-                      src="https://rentahandheld.com/img/iconshandheld/Display_EA520.svg"
+                      src="/src/assets/images/iconshandheld/Display_EA520.svg"
                       alt=""
                       style="width: 70px; height: auto;"
                     />
                   </div>
                   <div class="div-box-card">
                     <p style="font-size: 1.5em;">2D</p><img
-                      src="https://rentahandheld.com/img/iconshandheld/qr.svg"
+                      src="/src/assets/images/iconshandheld/qr.svg"
                       alt=""
                       style="width: 90px; height: auto;"
                     />
@@ -954,7 +963,7 @@ import "swiper/css/bundle";
           <div class="product-slider__card">
             <div class="overlay"></div>
             <img
-              src="https://www.rentahandheld.com/img/Fondos/fondo3.webp"
+              src="/src/assets/images/Fondos/fondo3.webp"
               alt="star wars"
               class="product-slider__cover"
             />
@@ -965,21 +974,21 @@ import "swiper/css/bundle";
                   <!-- dos -->
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/connectivity.svg"
+                      src="/src/assets/images/iconshandheld/connectivity.svg"
                       alt=""
                     />
                     <p>Conexiones inalámbricas</p>
                   </div>
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/Ram.svg"
+                      src="/src/assets/images/iconshandheld/Ram.svg"
                       alt=""
                     />
                     <p>Robusta memoria</p>
                   </div>
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/CPU.svg"
+                      src="/src/assets/images/iconshandheld/CPU.svg"
                       alt=""
                     />
                     <p>Procesador ARM de 400</p>
@@ -987,21 +996,21 @@ import "swiper/css/bundle";
                   <!-- Uno -->
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/androidfree.svg"
+                      src="/src/assets/images/iconshandheld/androidfree.svg"
                       alt=""
                     />
                     <p>Conectividad Android</p>
                   </div>
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/bigScreen.svg"
+                      src="/src/assets/images/iconshandheld/bigScreen.svg"
                       alt=""
                     />
                     <p>Pantalla grande y fácil de leer</p>
                   </div>
                   <div class="second-flex">
                     <img
-                      src="https://www.rentahandheld.com/img/iconshandheld/bateria.svg"
+                      src="/src/assets/images/iconshandheld/bateria.svg"
                       alt=""
                     />
                     <p>Batería de alta capacidad</p>
@@ -1028,7 +1037,7 @@ import "swiper/css/bundle";
           <div class="product-slider__card">
             <div class="overlay"></div>
             <img
-              src="https://www.rentahandheld.com/img/Fondos/fondo5.webp"
+              src="/src/assets/images/Fondos/fondo5.webp"
               alt="star wars"
               class="product-slider__cover"
             />
@@ -1039,7 +1048,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/android_ht730.svg"
+                        src="/src/assets/images/iconshandheld/android_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -1050,7 +1059,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/ip67_ht730.svg"
+                        src="/src/assets/images/iconshandheld/ip67_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -1061,7 +1070,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/logistica_ht730.svg"
+                        src="/src/assets/images/iconshandheld/logistica_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -1072,7 +1081,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/almacen_ht730.svg"
+                        src="/src/assets/images/iconshandheld/almacen_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -1083,7 +1092,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/Bluetooth_ht730.svg"
+                        src="/src/assets/images/iconshandheld/Bluetooth_ht730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -1094,7 +1103,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/qr.svg"
+                        src="/src/assets/images/iconshandheld/qr.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -1105,7 +1114,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/Keyboard_HT730.svg"
+                        src="/src/assets/images/iconshandheld/Keyboard_HT730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -1116,7 +1125,7 @@ import "swiper/css/bundle";
                   <div>
                     <div class="box-icon">
                       <img
-                        src="https://www.rentahandheld.com/img/iconshandheld/Certificado GMS_HT730.svg"
+                        src="/src/assets/images/iconshandheld/Certificado GMS_HT730.svg"
                         alt="icono sobre características del producto"
                       />
                     </div>
@@ -1175,9 +1184,9 @@ import "swiper/css/bundle";
       }
 
       .heldContainer {
+        display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        display: flex;
         min-height: 300px;
         align-items: center;
       }
@@ -1878,6 +1887,7 @@ import "swiper/css/bundle";
         transform: translateY(55px);
         transition: all 0.5s;
       }
+
       .product-ctr {
         display: flex;
         align-items: center;

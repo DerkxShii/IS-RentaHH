@@ -5,10 +5,6 @@ import BtnLink from "../components/shared/BtnLink.astro";
 
 const navItems = [
   {
-    href: "#",
-    text: "Inicio",
-  },
-  {
     href: "#products",
     text: "Productos",
   },
@@ -20,25 +16,25 @@ const navItems = [
     href: "#services",
     text: "Proceso",
   },
-  // {
-  //   href: "#",
-  //   text: "Catálogo",
-  // },
   {
-    href: "#faq",
+    href: "#other",
+    text: "Servicios",
+  },
+  {
+    href: "#footer",
     text: "Más",
   },
 ];
 ---
 
-<header class="absolute inset-x-0 top-0 z-50 py-0 px-20">
+<header class="absolute inset-x-0 top-0 z-50 py-0 px-8 sm:px-20">
   <Container>
     <nav class="w-full flex justify-between gap-6 relative">
       <!-- logo -->
       <div class="min-w-max inline-flex relative">
         <a href="/" class="relative flex items-center gap-3">
           <img
-            src="https://rentahandheld.com/img/iconshandheld/LOGO%20HANDHELD%20REPAIR.svg"
+            src="/src/assets/images/iconshandheld/LOGO HANDHELD REPAIR.svg"
           />
         </a>
       </div>
