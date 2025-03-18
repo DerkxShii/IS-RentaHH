@@ -24,7 +24,7 @@ const ScrollingBanner = React.forwardRef<HTMLDivElement, ScrollingBannerProps>(
       gap = "1rem",
       showShadow = true,
       shouldPauseOnHover = true,
-      duration = 20,
+      duration = 45,
       children,
       style,
       ...props
@@ -68,7 +68,10 @@ const ScrollingBanner = React.forwardRef<HTMLDivElement, ScrollingBannerProps>(
             // "hover:[animation-play-state:paused]": shouldPauseOnHover,
           })}
         >
-          {[...children, ...children].map((child, index) => (
+          {[
+            ...React.Children.toArray(children),
+            ...React.Children.toArray(children),
+          ].map((child, index) => (
             <div key={index} className="flex-shrink-0">
               {child}
             </div>
