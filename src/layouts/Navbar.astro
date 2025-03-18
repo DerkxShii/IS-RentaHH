@@ -5,6 +5,10 @@ import BtnLink from "../components/shared/BtnLink.astro";
 
 const navItems = [
   {
+    href: "#",
+    text: "Inicio",
+  },
+  {
     href: "#products",
     text: "Productos",
   },
@@ -20,14 +24,12 @@ const navItems = [
     href: "#servicios",
     text: "Servicios",
   },
-  {
-    href: "#footer",
-    text: "Más",
-  },
 ];
 ---
 
-<header class="absolute inset-x-0 top-0 z-50 py-0 px-8 sm:px-20">
+<header
+  class="fixed inset-x-0 top-0 z-50 w-full bg-transparent py-0 px-8 sm:px-20 bg-shape"
+>
   <Container>
     <nav class="w-full flex justify-between gap-6 relative">
       <!-- logo -->
@@ -103,9 +105,11 @@ const navItems = [
           </button>
         </a>
 
-        <!-- <button
+        <button
           data-switch-theme
-          class="outline-none flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border hover:bg-slate-200 dark:hover:bg-slate-800"
+          class="outline-none flex relative
+        text-heading-2 rounded-full p-2 lg:p-3 border border-box-border
+        hover:bg-slate-200 dark:hover:bg-slate-800"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -137,8 +141,35 @@ const navItems = [
           </svg>
 
           <span class="sr-only">switch theme</span>
-        </button> -->
+        </button>
+
+        <button
+          data-toggle-nav
+          data-open-nav="false"
+          class="ml-2 lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative"
+        >
+          <span
+            id="line1"
+            class="w-6 h-0.5 rounded-full bg-heading-2 transition-all duration-300 ease-linear"
+          ></span>
+          <span
+            id="line2"
+            class="w-6 origin-center mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear"
+          ></span>
+          <span
+            id="line3"
+            class="w-6 mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear"
+          ></span>
+          <span class="sr-only">togglenav</span>
+        </button>
       </div>
     </nav>
   </Container>
 </header>
+
+<style>
+  .bg-shape {
+    background-color: transparent;
+    backdrop-filter: blur(18px);
+  }
+</style>
