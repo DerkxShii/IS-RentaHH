@@ -4,61 +4,69 @@ import Container from "../components/shared/Container.astro";
 import FooterNav from "../components/shared/FooterNav.astro";
 import Paragraph from "../components/shared/Paragraph.astro";
 
-const footerNav1 = [
+const footerPages = [
+  { itemText: "Renta HandHeld", itemLink: "https://www.rentahandheld.com/" },
+  { itemText: "InteliSystems NET", itemLink: "/" },
+  { itemText: "InteliSystems MX", itemLink: "https://intelisystems.mx/" },
   {
-    itemText: "MC9190",
-    itemLink: "#products",
+    itemText: "HandHeld Products",
+    itemLink: "https://www.handheldproducts.com.mx/",
+  },
+  { itemText: "HandHeld Repair", itemLink: "https://handheldrepair.com.mx/" },
+];
+
+const footerProducts = [
+  {
+    itemText: "HandHeld MC3300",
+    itemLink: "https://intelisystems.mx/products/zebra-mc3300/",
   },
   {
-    itemText: "MC3300",
-    itemLink: "#products",
+    itemText: "HandHeld MC9400",
+    itemLink: "https://intelisystems.mx/products/zebra-mc9400/",
   },
   {
-    itemText: "MC9300",
-    itemLink: "#products",
+    itemText: "HandHeld TC73",
+    itemLink: "https://intelisystems.mx/products/zebra-tc73/",
   },
   {
-    itemText: "TC70X",
-    itemLink: "#products",
+    itemText: "HandHeld CK65",
+    itemLink: "https://intelisystems.mx/products/honeywell-ck65/",
   },
   {
-    itemText: "TC72",
-    itemLink: "#products",
+    itemText: "HandHeld CT40",
+    itemLink: "https://intelisystems.mx/products/honeywell-ct40",
   },
   {
-    itemText: "CK65",
-    itemLink: "#products",
+    itemText: "HandHeld EDA51",
+    itemLink: "https://intelisystems.mx/products/honeywell-eda51/",
+  },
+  {
+    itemText: "HandHeld HT730",
+    itemLink: "https://intelisystems.mx/products/unitech-ht730/",
+  },
+  {
+    itemText: "HandHeld PA768",
+    itemLink: "https://intelisystems.mx/products/unitech-pa768/",
+  },
+  {
+    itemText: "HandHeld EA520",
+    itemLink: "https://intelisystems.mx/products/unitech-ea520/",
+  },
+  {
+    itemText: "Impresora ZT230",
+    itemLink: "https://intelisystems.mx/products/zebra--imp-zt230/",
+  },
+  {
+    itemText: "Impresora QLN220",
+    itemLink: "https://intelisystems.mx/products/zebra--imp-qln220/",
+  },
+  {
+    itemText: "Impresora ZT411",
+    itemLink: "https://intelisystems.mx/products/zebra--imp-zt-411/",
   },
 ];
 
-const footerSupport = [
-  {
-    itemText: "QLN220",
-    itemLink: "#products",
-  },
-  {
-    itemText: "QLN320",
-    itemLink: "#products",
-  },
-  {
-    itemText: "QLN420",
-    itemLink: "#products",
-  },
-  {
-    itemText: "QLN630",
-    itemLink: "#products",
-  },
-  {
-    itemText: "EDA51",
-    itemLink: "#products",
-  },
-  {
-    itemText: "Más información",
-    itemLink: "https://intelisystems.mx/products/",
-  },
-];
-
-const footerCompany = [
+const footerPlace = [
   {
     itemText: "Inicio",
     itemLink: "#",
@@ -80,7 +88,23 @@ const footerCompany = [
     itemLink: "#servicios",
   },
 ];
-const footerLegal = [
+const footerContact = [
+  {
+    itemText:
+      "Oriente 237 No. 492, Colonia Agrícola Oriental, Delegación Iztacalco, Ciudad de México",
+    itemLink: "https://maps.app.goo.gl/iqgb9LWXrMmJdSYEA",
+  },
+  {
+    itemText: "contacto@handheldrepair.com.mx",
+    itemLink:
+      "mailto:contacto@handheldrepair.com.mx?Subject=Informaci%C3%B3n%20sobre%20los%20servicio%20de%20Renta,%20Venta%20y%20Reparaci%C3%B3n.",
+  },
+  {
+    itemText: "+52 55 5701 4315",
+    itemLink: "tel:5557014315",
+  },
+];
+const footerLegal2 = [
   {
     itemText:
       "Oriente 237 No. 492, Colonia Agrícola Oriental, Delegación Iztacalco, Ciudad de México",
@@ -222,13 +246,13 @@ const footerLegal = [
         </div>
 
         <GroupFooterNav>
-          <FooterNav title={"Servicios"} navItems={footerCompany} />
-          <FooterNav title={"Productos"} navItems={footerNav1} />
+          <FooterNav title={"Productos"} navItems={footerProducts} />
+          <FooterNav title={"Servicios"} navItems={footerPlace} />
         </GroupFooterNav>
 
         <GroupFooterNav>
-          <FooterNav title={"Productos"} navItems={footerSupport} />
-          <FooterNav title={"Contacto"} navItems={footerLegal} />
+          <FooterNav title={"Otros"} navItems={footerPages} />
+          <FooterNav title={"Contacto"} navItems={footerContact} />
         </GroupFooterNav>
       </div>
     </Container>
