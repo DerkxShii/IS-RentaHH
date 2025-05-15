@@ -6,19 +6,61 @@ import Paragraph from "../components/shared/Paragraph.astro";
 
 const footerPages = [
   { itemText: "Renta HandHeld", itemLink: "https://www.rentahandheld.com/" },
-  { itemText: "InteliSystems NET", itemLink: "https://intelisystems.net/" },
+  { itemText: "InteliSystems", itemLink: "https://intelisystems.net/" },
   { itemText: "InteliSystems MX", itemLink: "https://intelisystems.mx/" },
+  { itemText: "HandHeld MX", itemLink: "https://www.handheld.mx/" },
   {
     itemText: "HandHeld Products",
     itemLink: "https://www.handheldproducts.com.mx/",
   },
+  {
+    itemText: "HandHeld Products MX",
+    itemLink: "https://www.handheldproducts.mx/",
+  },
   { itemText: "HandHeld Repair", itemLink: "https://handheldrepair.com.mx/" },
+  { itemText: "HandHeld Repair NET", itemLink: "https://handheldrepair.net/" },
+  {
+    itemText: "HandHeld Solutions MX",
+    itemLink: "https://handheldsolutions.mx/",
+  },
 ];
 
-const footerProducts = [
+const footerProducts1 = [
+  {
+    itemText: "HandHeld CK3X",
+    itemLink: "https://intelisystems.mx/products/honeywell-ck3x/",
+  },
   {
     itemText: "HandHeld MC3300",
     itemLink: "https://intelisystems.mx/products/zebra-mc3300/",
+  },
+  {
+    itemText: "HandHeld MC9300",
+    itemLink: "https://intelisystems.mx/products/zebra-mc9300/",
+  },
+  {
+    itemText: "HandHeld MC65",
+    itemLink: "https://intelisystems.mx/products/zebra-mc65/",
+  },
+  {
+    itemText: "HandHeld MC9090",
+    itemLink: "https://intelisystems.mx/products/zebra-mc9090/",
+  },
+  {
+    itemText: "HandHeld MC9190",
+    itemLink: "https://intelisystems.mx/products/zebra-mc9190/",
+  },
+  {
+    itemText: "HandHeld MC92N0",
+    itemLink: "https://intelisystems.mx/products/zebra-mc92n0/",
+  },
+  {
+    itemText: "HandHeld TC70X",
+    itemLink: "https://intelisystems.mx/products/zebra-tc70x/",
+  },
+  {
+    itemText: "HandHeld TC72",
+    itemLink: "https://intelisystems.mx/products/zebra-tc72/",
   },
   {
     itemText: "HandHeld MC9400",
@@ -34,8 +76,11 @@ const footerProducts = [
   },
   {
     itemText: "HandHeld CT40",
-    itemLink: "https://intelisystems.mx/products/honeywell-ct40",
+    itemLink: "https://intelisystems.mx/products/honeywell-ct40/",
   },
+];
+
+const footerProducts2 = [
   {
     itemText: "HandHeld EDA51",
     itemLink: "https://intelisystems.mx/products/honeywell-eda51/",
@@ -53,6 +98,22 @@ const footerProducts = [
     itemLink: "https://intelisystems.mx/products/unitech-ea520/",
   },
   {
+    itemText: "Impresora QLN320",
+    itemLink: "https://intelisystems.mx/products/zebra--imp-qln320/",
+  },
+  {
+    itemText: "Impresora QLN420",
+    itemLink: "https://intelisystems.mx/products/zebra--imp-qln420/",
+  },
+  {
+    itemText: "Impresora ZQ630",
+    itemLink: "https://intelisystems.mx/products/zebra--imp-zq630/",
+  },
+  {
+    itemText: "Impresora ZT410",
+    itemLink: "https://intelisystems.mx/products/zebra--imp-zt410/",
+  },
+  {
     itemText: "Impresora ZT230",
     itemLink: "https://intelisystems.mx/products/zebra--imp-zt230/",
   },
@@ -64,30 +125,16 @@ const footerProducts = [
     itemText: "Impresora ZT411",
     itemLink: "https://intelisystems.mx/products/zebra--imp-zt411/",
   },
+  {
+    itemText: "Lector LS3578",
+    itemLink: "https://intelisystems.mx/products/zebra--scan-ls3578/",
+  },
+  {
+    itemText: "Lector LS4278",
+    itemLink: "https://intelisystems.mx/products/zebra--scan-ls4278/",
+  },
 ];
 
-const footerPlace = [
-  {
-    itemText: "Inicio",
-    itemLink: "#",
-  },
-  {
-    itemText: "Productos",
-    itemLink: "#products",
-  },
-  {
-    itemText: "Beneficios",
-    itemLink: "#features",
-  },
-  {
-    itemText: "Proceso",
-    itemLink: "#proceso",
-  },
-  {
-    itemText: "Más servicios",
-    itemLink: "#servicios",
-  },
-];
 const footerContact = [
   {
     itemText:
@@ -142,7 +189,7 @@ const footerLegal2 = [
         class="grid grid-cols-2 lg:grid-cols-3 lg:items-stretch gap-8 relative"
       >
         <div class="col-span-2 lg:col-span-1 h-auto flex flex-col">
-          <div class="h-full">
+          <div class="">
             <a href="#" class="relative flex items-center gap-3">
               <div class="inline-flex text-lg font-semibold text-heading-1">
                 HandHeld Repair | InteliSystems
@@ -156,9 +203,7 @@ const footerLegal2 = [
           </div>
 
           <!-- social links -->
-          <div
-            class="min-h-max h-full flex items-center gap-8 text-heading-3 mt-8"
-          >
+          <div class="flex items-center gap-8 text-heading-3 mt-8">
             <a
               href="https://www.facebook.com/handheldrepairmx"
               class="transition hover:text-heading-1 hover:scale-105"
@@ -238,11 +283,25 @@ const footerLegal2 = [
               <span class="sr-only">social link</span>
             </a>
           </div>
+
+          <div class="py-2 relative">
+            <Container>
+              <div
+                class="flex justify-left items-center gap-6 md:text-lg text-heading-3 mt-8"
+              >
+                <div>
+                  <a href="https://intelisystems.net/aviso_privacidad.html"
+                    >Aviso de Privacidad</a
+                  >
+                </div>
+              </div>
+            </Container>
+          </div>
         </div>
 
         <GroupFooterNav>
-          <FooterNav title={"Productos"} navItems={footerProducts} />
-          <FooterNav title={"Servicios"} navItems={footerPlace} />
+          <FooterNav title={"Productos"} navItems={footerProducts1} />
+          <FooterNav title={"Productos"} navItems={footerProducts2} />
         </GroupFooterNav>
 
         <GroupFooterNav>
@@ -251,18 +310,5 @@ const footerLegal2 = [
         </GroupFooterNav>
       </div>
     </Container>
-    <div class="py-2 relative">
-      <Container>
-        <div
-          class="flex ml-16 justify-left items-center gap-6 md:text-lg text-heading-3"
-        >
-          <div>
-            <a href="https://intelisystems.net/aviso_privacidad.html"
-              >Aviso de Privacidad</a
-            >
-          </div>
-        </div>
-      </Container>
-    </div>
   </footer>
 </div>
