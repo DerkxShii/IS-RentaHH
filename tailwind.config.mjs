@@ -29,7 +29,7 @@ export default {
       },
     },
     animation: {
-      "scrolling-banner": "scrolling-banner 20s linear infinite",
+      "scrolling-banner": "scrolling-banner var(--duration) linear infinite",
       "scrolling-banner-vertical":
         "scrolling-banner-vertical var(--duration) linear infinite",
       "fade-in": "fade-in 1s ease-in-out",

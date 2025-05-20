@@ -24,7 +24,7 @@ const ScrollingBanner = React.forwardRef<HTMLDivElement, ScrollingBannerProps>(
       gap = "1rem",
       showShadow = true,
       shouldPauseOnHover = true,
-      duration = 45,
+      duration = 30,
       children,
       style,
       ...props
