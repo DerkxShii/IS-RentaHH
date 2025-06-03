@@ -24,7 +24,7 @@ const { className } = Astro.props;
     >
       <div class="container">
         <div
-          class="row our-offer-items less-carousel flex flex-col lg:flex-row gap-6 px-4 lg:gap-4 lg:px-24 sm:px-20"
+          class="row our-offer-items less-carousel flex flex-col lg:flex-row gap-6 px-0 lg:gap-4 lg:px-24 sm:px-2"
         >
           <div class="col-md-4 col-sm-6 equal-height">
             <img
@@ -37,7 +37,7 @@ const { className } = Astro.props;
                 Somos expertos en handhelds a la medida de tus necesidades. Con
                 nosotros podrás adquirir handhelds.
               </p>
-              <div class="mt-10">
+              <div class="mt-8">
                 <a href="https://intelisystems.net/asesoria_informatica.html">
                   <Button
                     variant={"primary"}
@@ -62,7 +62,7 @@ const { className } = Astro.props;
                 Somos expertos en reparación de handhelds. Te ofrecemos un
                 servicio rápido, eficiente y garantizado.
               </p>
-              <div class="mt-10">
+              <div class="mt-8">
                 <a
                   href="https://handheldrepair.com.mx/reparaci%C3%B3n-de-terminales-portatiles.html"
                 >
@@ -89,8 +89,11 @@ const { className } = Astro.props;
                 SAGA LITE es el software de gestión de inventarios que permite
                 controlar tu almacén de forma segura.
               </p>
-              <div class="mt-10">
-                <a href="https://intelisystems.net/software_para_handheld.html">
+              <div class="mt-8">
+                <a
+                  href="https://intelisystems.net/software_para_handheld.html"
+                  class="mx-auto"
+                >
                   <Button
                     variant={"primary"}
                     className={"min-w-max text-white"}
@@ -152,7 +155,7 @@ const { className } = Astro.props;
     background: #ffffff none repeat scroll 0 0;
     border: 2px solid;
     height: 15px;
-    margin: 0 5px;
+    margin: 0 0px;
     width: 15px;
   }
 
@@ -324,5 +327,54 @@ const { className } = Astro.props;
     position: absolute;
     top: -10px;
     width: 120px;
+  }
+
+  @media (max-width: 1023px) {
+    .we-offer-area .our-offer-items.less-carousel {
+      flex-direction: column;
+    }
+
+    .we-offer-area .our-offer-items.less-carousel .equal-height {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      align-items: stretch; /* Estira los items hijos para que tengan la misma altura */
+    }
+
+    .we-offer-area .our-offer-items.less-carousel .equal-height img {
+      width: 50%;
+      object-fit: cover; /* Cubre todo el espacio manteniendo la proporción */
+      border-top-right-radius: 0px; /* Mantiene el borde redondeado */
+      border-bottom-left-radius: 20px;
+    }
+
+    .we-offer-area .our-offer-items.less-carousel .equal-height .item {
+      width: 50%;
+      padding: 20px; /* Aumenta un poco el padding */
+      border-left: 2px solid #29628d; /* Vuelve a poner el borde izquierdo */
+      box-shadow: 0 0 10px #cccccc; /* Vuelve a poner la sombra */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centra verticalmente el contenido */
+      align-items: flex-start; /* Alinea el texto a la izquierda */
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 0px;
+    }
+
+    .we-offer-area.text-center .item h2 {
+      font-size: 1.5rem;
+      padding: 10px 0;
+      text-align: left; /* Alinea el título a la izquierda */
+    }
+
+    .we-offer-area .item p {
+      font-size: 1rem;
+      text-align: left; /* Alinea el párrafo a la izquierda */
+      margin-bottom: 10px; /* Espacio entre el texto y el botón */
+    }
+
+    .we-offer-area .item .mt-10 {
+      margin-top: 0; /* Elimina el margen superior predeterminado */
+    }
   }
 </style>

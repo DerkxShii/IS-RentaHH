@@ -1,0 +1,108 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/sections/Hero.astro";
+import Carrusel from "../components/sections/react/marcas";
+import Services from "../components/sections/Services.astro";
+import FAQ from "../components/sections/FAQ.astro";
+import Features from "../components/sections/Features.astro";
+import CTA from "../components/sections/CTA.astro";
+import Products from "@src/components/sections/Products.astro";
+import Container from "@src/components/shared/Container.astro";
+import PricingSection from "@src/components/sections/PricingSection.astro";
+import pricing from "@src/data/pricing.json";
+import Otros from "@src/components/sections/Otros.astro";
+import DispExt from "@src/components/sections/DispExt.astro";
+import Hero2 from "@src/components/sections/Hero2.astro";
+---
+
+<Layout
+  title="Renta de Lectores de Códigos de Barras | HandHeld Repair | Intelisystems"
+>
+  <main class="flex flex-col overflow-hidden">
+    <Hero2 title="LECTORES DE CÓDIGO DE BARRAS" />
+    <!-- <Solutions className="pt-10 md:pt-16" /> -->
+    <section
+      id="products"
+      class=`relative dark:bg-gradient-to-br dark:from-indigo-800 dark:to-green-950  animate-fade-in`
+    >
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-sky-200 dark:from-sky-500 from-0% via-primary dark:via-primary via-80% to-green-400 dark:to-green-600 to-110%
+      absolute left-1/3 bottom-1/3"
+      ></span>
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-yellow-200 dark:from-yellow-400 from-0% via-sky-500 dark:via-sky-700 via-85% to-primary dark:to-primary to-100%
+      absolute right-1/4 bottom-0"
+      ></span>
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-green-300 dark:from-green-500 from-0% via-primary dark:via-primary via-80% to-sky-400 dark:to-sky-600 to-110%
+      absolute right-1/3 top-1/3"
+      ></span>
+
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-green-300 dark:from-green-500 from-0% via-primary dark:via-primary via-80% to-sky-400 dark:to-sky-600 to-110%
+      absolute right-3/4 top-1/3"
+      ></span>
+
+      <Container className="py-44">
+        <Products
+          items={[
+            {
+              title: "Zebra LS3578",
+              producto: "/assets/images/productos/ZEBRA-LS3578-ER.webp",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Inalámbrico",
+              icon1:
+                "/assets/images/iconshandheld/lector_inalambrico_ht730.svg",
+              propiedad2: "Fuzzy Logic",
+              icon2: "/assets/images/iconshandheld/lector_dañado_ht730.svg",
+              propiedad3: "Bluetooth",
+              icon3: "/assets/images/iconshandheld/Bluetooth_ht730.svg",
+              propiedad4: "IP65",
+              icon4: "/assets/images/iconshandheld/ip67_ht730.svg",
+              propiedad5: "Robusto",
+              icon5: "/assets/images/iconshandheld/resistente_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-ls3578",
+            },
+            {
+              title: "Zebra LS4278",
+              producto: "/assets/images/productos/ZEBRA-LS4278.webp",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Inalámbrico",
+              icon1:
+                "/assets/images/iconshandheld/lector_inalambrico_ht730.svg",
+              propiedad2: "Alto Rendimiento",
+              icon2: "/assets/images/iconshandheld/rendimiento_ht730.svg",
+              propiedad3: "Bluetooth 15",
+              icon3: "/assets/images/iconshandheld/Bluetooth_ht730.svg",
+              propiedad4: "Multi-línea",
+              icon4:
+                "/assets/images/iconshandheld/lector_omnidireccional_ht730.svg",
+              propiedad5: "Preciso",
+              icon5: "/assets/images/iconshandheld/lector_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-ls4278",
+            },
+          ]}
+        />
+      </Container>
+    </section>
+    <DispExt
+      device1="HANDHELD Y TERMINALES PORTÁTILES"
+      device2="IMPRESORAS INDUSTRIALES"
+      device3="IMPRESORAS PORTÁTILES"
+      des1="Fill out the form and the algorithm will offer the right team of experts"
+      des2="Fill out the form and the algorithm will offer the right team of experts"
+      des3="Fill out the form and the algorithm will offer the right team of experts"
+      link1="/renta_handheld"
+      link2="/renta_impresoras"
+      link3="/renta_impresoras"
+    />
+    <Otros className="py-6 md:py-8 animate-fade-in" />
+    <Carrusel client:load />
+    <FAQ className="py-6 md:py-8 animate-fade-in" />
+    <CTA className="py-10 md:py-16 animate-fade-in" />
+  </main>
+</Layout>

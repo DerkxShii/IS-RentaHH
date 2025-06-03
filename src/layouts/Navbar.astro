@@ -5,24 +5,28 @@ import BtnLink from "../components/shared/BtnLink.astro";
 
 const navItems = [
   {
-    href: "#",
+    href: "/",
     text: "Inicio",
   },
   {
-    href: "#products",
+    href: "https://intelisystems.mx/products/",
     text: "Productos",
   },
   {
-    href: "#features",
-    text: "Beneficios",
+    href: "/renta_handheld",
+    text: "Rentar HandHeld",
   },
   {
-    href: "#proceso",
-    text: "Proceso",
+    href: "/renta_impresoras",
+    text: "Rentar Impresoras",
   },
   {
-    href: "#servicios",
-    text: "Servicios",
+    href: "/renta_lectores_de_codigos_de_barras",
+    text: "Rentar Lectores",
+  },
+  {
+    href: "https://intelisystems.mx/blog/",
+    text: "Blog",
   },
 ];
 ---
@@ -42,15 +46,15 @@ const navItems = [
       <div
         data-nav-overlay
         aria-hidden="true"
-        class="fixed hidden inset-0 lg:!hidden bg-box-bg bg-opacity-50 backdrop-filter backdrop-blur-xl"
+        class="fixed hidden inset-0 2xl:!hidden bg-box-bg bg-opacity-50 backdrop-filter backdrop-blur-2xl"
       >
       </div>
       <div
         data-navbar
-        class="flex h-0 overflow-hidden lg:!h-auto lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-body lg:bg-transparent border-x border-x-box-border lg:border-x-0"
+        class="flex h-0 overflow-hidden 2xl:!h-auto 2xl:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 2xl:flex-row w-full 2xl:justify-between 2xl:items-center absolute 2xl:relative top-full 2xl:top-0 bg-body 2xl:bg-transparent border-x border-x-box-border 2xl:border-x-0"
       >
         <ul
-          class="border-t border-box-border lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-12 text-lg text-heading-2 w-full lg:justify-center lg:items-center"
+          class="border-t border-box-border 2xl:border-t-0 px-6 2xl:px-0 pt-6 2xl:pt-0 flex flex-col 2xl:flex-row gap-y-4 gap-x-12 text-lg text-heading-2 w-full 2xl:justify-center 2xl:items-center"
         >
           {
             navItems.map((item) => {
@@ -60,7 +64,7 @@ const navItems = [
         </ul>
 
         <div
-          class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-bg lg:border-0 px-6 lg:px-0"
+          class="2xl:min-w-max flex items-center sm:w-max w-full pb-6 2xl:pb-0 border-b border-box-bg 2xl:border-0 px-6 2xl:px-0"
         >
           <BtnLink
             text="Contáctanos"
@@ -76,7 +80,7 @@ const navItems = [
           href="https://api.whatsapp.com/send?phone=+525643768599&text=%C2%A1Hola!,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio%20que%20proporcionan."
         >
           <button
-            class="outline-none flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border hover:bg-slate-200 dark:hover:bg-slate-800"
+            class="outline-none flex relative text-heading-2 rounded-full p-2 2xl:p-3 border border-box-border hover:bg-slate-200 dark:hover:bg-slate-800"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +112,7 @@ const navItems = [
         <button
           data-switch-theme
           class="outline-none flex relative
-        text-heading-2 rounded-full p-2 lg:p-3 border border-box-border
+        text-heading-2 rounded-full p-2 2xl:p-3 border border-box-border
         hover:bg-slate-200 dark:hover:bg-slate-800"
         >
           <svg
@@ -146,7 +150,7 @@ const navItems = [
         <button
           data-toggle-nav
           data-open-nav="false"
-          class="ml-2 lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative"
+          class="ml-2 2xl:hidden 2xl:invisible outline-none w-7 h-auto flex flex-col relative"
         >
           <span
             id="line1"

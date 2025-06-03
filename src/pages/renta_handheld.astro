@@ -1,0 +1,378 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/sections/Hero.astro";
+import Carrusel from "../components/sections/react/marcas";
+import Services from "../components/sections/Services.astro";
+import FAQ from "../components/sections/FAQ.astro";
+import Features from "../components/sections/Features.astro";
+import CTA from "../components/sections/CTA.astro";
+import Products from "@src/components/sections/Products.astro";
+import Container from "@src/components/shared/Container.astro";
+import PricingSection from "@src/components/sections/PricingSection.astro";
+import pricing from "@src/data/pricing.json";
+import Otros from "@src/components/sections/Otros.astro";
+import DispExt from "@src/components/sections/DispExt.astro";
+import Hero2 from "@src/components/sections/Hero2.astro";
+---
+
+<Layout
+  title="Renta de HandHeld | Renta de Terminales Portátiles | HandHeld Repair | Intelisystems"
+>
+  <main class="flex flex-col overflow-hidden">
+    <Hero2 title="HANDHELD" />
+    <!-- <Solutions className="pt-10 md:pt-16" /> -->
+    <section
+      id="products"
+      class=`relative dark:bg-gradient-to-br dark:from-indigo-800 dark:to-green-950  animate-fade-in`
+    >
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-sky-200 dark:from-sky-500 from-0% via-primary dark:via-primary via-80% to-green-400 dark:to-green-600 to-110%
+      absolute left-1/3 bottom-1/3"
+      ></span>
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-yellow-200 dark:from-yellow-400 from-0% via-sky-500 dark:via-sky-700 via-85% to-primary dark:to-primary to-100%
+      absolute right-1/4 bottom-0"
+      ></span>
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-green-300 dark:from-green-500 from-0% via-primary dark:via-primary via-80% to-sky-400 dark:to-sky-600 to-110%
+      absolute right-1/3 top-1/3"
+      ></span>
+
+      <span
+        class="w-40 h-40 rounded-full bg-gradient-to-br from-green-300 dark:from-green-500 from-0% via-primary dark:via-primary via-80% to-sky-400 dark:to-sky-600 to-110%
+      absolute right-3/4 top-1/3"
+      ></span>
+
+      <Container className="py-44">
+        <Products
+          items={[
+            {
+              title: "Zebra MC65",
+              producto: "/assets/images/productos/ZEBRA-MC65.webp",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Windows 6.5",
+              icon1: "/assets/images/iconshandheld/os_ht730.svg",
+              propiedad2: "Lector 2D",
+              icon2: "/assets/images/iconshandheld/qr.svg",
+              propiedad3: "Cámara 3MP",
+              icon3: "/assets/images/iconshandheld/camara_ht730.svg",
+              propiedad4: "Robusta",
+              icon4: "/assets/images/iconshandheld/resistente_ht730.svg",
+              propiedad5: "SIM",
+              icon5: "/assets/images/iconshandheld/sim_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-mc65",
+            },
+            {
+              title: "Zebra MC92N0",
+              producto: "/assets/images/productos/ZEBRA-MC92N0.webp",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Windows 7.0",
+              icon1: "/assets/images/iconshandheld/os_ht730.svg",
+              propiedad2: "Lector 1D",
+              icon2:
+                "/assets/images/iconshandheld/lector_largo_alcance_ht730.svg",
+              propiedad3: "Robusta",
+              icon3: "/assets/images/iconshandheld/resistente_ht730.svg",
+              propiedad4: "Wi-Fi",
+              icon4: "/assets/images/iconshandheld/conectividad_ht730.svg",
+              propiedad5: "Pistola",
+              icon5: "/assets/images/iconshandheld/pistola_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-mc92n0",
+            },
+            {
+              title: "Zebra MC3300",
+              producto: "/assets/images/productos/ZEBRA-MC33.png",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android 8",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Varios Teclados",
+              icon2: "/assets/images/iconshandheld/teclado_ht730.svg",
+              propiedad3: "Buen Scan",
+              icon3: "/assets/images/iconshandheld/lector_ht730.svg",
+              propiedad4: "Ergonómica",
+              icon4: "/assets/images/iconshandheld/ergonomico_ht730.svg",
+              propiedad5: "Ligera",
+              icon5: "/assets/images/iconshandheld/peso_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-mc3300",
+            },
+            {
+              title: "Zebra MC9090",
+              producto: "/assets/images/productos/ZEBRA-MC9090.webp",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Windows CE 5",
+              icon1: "/assets/images/iconshandheld/os_ht730.svg",
+              propiedad2: "Lector LORAX",
+              icon2:
+                "/assets/images/iconshandheld/lector_largo_alcance_ht730.svg",
+              propiedad3: "Robusta",
+              icon3: "/assets/images/iconshandheld/resistente_ht730.svg",
+              propiedad4: "Wi-Fi",
+              icon4: "/assets/images/iconshandheld/conectividad_ht730.svg",
+              propiedad5: "Pistola",
+              icon5: "/assets/images/iconshandheld/pistola_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-mc9090",
+            },
+            {
+              title: "Zebra MC9190",
+              producto: "/assets/images/productos/ZEBRA-MC9190.webp",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Windows CE",
+              icon1: "/assets/images/iconshandheld/os_ht730.svg",
+              propiedad2: "Varios Lectores",
+              icon2: "/assets/images/iconshandheld/lector_ht730.svg",
+              propiedad3: "IP64",
+              icon3: "/assets/images/iconshandheld/ip67_ht730.svg",
+              propiedad4: "Wi-Fi",
+              icon4: "/assets/images/iconshandheld/wifi_ht730.svg",
+              propiedad5: "Gorilla Glass",
+              icon5: "/assets/images/iconshandheld/pantalla_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-mc9190",
+            },
+            {
+              title: "Zebra MC9300",
+              producto: "/assets/images/productos/ZEBRA-MC9300.png",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android 14",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Touch",
+              icon2: "/assets/images/iconshandheld/pantalla_ht730.svg",
+              propiedad3: "Buena Batería",
+              icon3: "/assets/images/iconshandheld/bateria_ht730.svg",
+              propiedad4: "Resistente",
+              icon4: "/assets/images/iconshandheld/resistente_ht730.svg",
+              propiedad5: "Potente",
+              icon5: "/assets/images/iconshandheld/rendimiento_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-mc9300",
+            },
+            {
+              title: "Zebra MC9400",
+              producto: "/assets/images/productos/ZEBRA-MC9400.png",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android 17",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Largo Alcance",
+              icon2:
+                "/assets/images/iconshandheld/lector_largo_alcance_ht730.svg",
+              propiedad3: "Wi-Fi 6E",
+              icon3: "/assets/images/iconshandheld/wifi_ht730.svg",
+              propiedad4: "IP68",
+              icon4: "/assets/images/iconshandheld/ip67_ht730.svg",
+              propiedad5: "Facial",
+              icon5: "/assets/images/iconshandheld/biometrico_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-mc9400",
+            },
+            {
+              title: "Zebra TC70x",
+              producto: "/assets/images/productos/ZEBRA-TC70X.webp",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Windows 10",
+              icon1: "/assets/images/iconshandheld/os_ht730.svg",
+              propiedad2: "Lector 2D",
+              icon2: "/assets/images/iconshandheld/qr.svg",
+              propiedad3: "Pantalla 4.7",
+              icon3: "/assets/images/iconshandheld/pantalla_ht730.svg",
+              propiedad4: "IP67",
+              icon4: "/assets/images/iconshandheld/ip67_ht730.svg",
+              propiedad5: "Cámara 13",
+              icon5: "/assets/images/iconshandheld/camara_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-tc70x",
+            },
+            {
+              title: "Zebra TC72",
+              producto: "/assets/images/productos/ZEBRA-TC72.webp",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android 14",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Touch",
+              icon2: "/assets/images/iconshandheld/pantalla_ht730.svg",
+              propiedad3: "Buena Batería",
+              icon3: "/assets/images/iconshandheld/bateria_ht730.svg",
+              propiedad4: "IP68",
+              icon4: "/assets/images/iconshandheld/ip67_ht730.svg",
+              propiedad5: "Simple",
+              icon5: "/assets/images/iconshandheld/facil_uso_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-tc72",
+            },
+            {
+              title: "Zebra TC73",
+              producto: "/assets/images/productos/ZEBRA-TC73.png",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android 16",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Pantalla 6",
+              icon2: "/assets/images/iconshandheld/pantalla_ht730.svg",
+              propiedad3: "Ergonómica",
+              icon3: "/assets/images/iconshandheld/ergonomico_ht730.svg",
+              propiedad4: "IP68",
+              icon4: "/assets/images/iconshandheld/ip67_ht730.svg",
+              propiedad5: "Ligera",
+              icon5: "/assets/images/iconshandheld/peso_ht730.svg",
+              propiedad6: "Zebra",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/zebra-tc73",
+            },
+            {
+              title: "Honeywell CK3X",
+              producto: "/assets/images/productos/HONEYWELL-CK3X.webp",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Windows",
+              icon1: "/assets/images/iconshandheld/os_ht730.svg",
+              propiedad2: "Lector 2D",
+              icon2: "/assets/images/iconshandheld/qr.svg",
+              propiedad3: "Buena Batería",
+              icon3: "/assets/images/iconshandheld/bateria_ht730.svg",
+              propiedad4: "Resistente",
+              icon4: "/assets/images/iconshandheld/resistente_ht730.svg",
+              propiedad5: "Compacta",
+              icon5: "/assets/images/iconshandheld/compacto_ht730.svg",
+              propiedad6: "Honeywell",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/honeywell-ck3x",
+            },
+            {
+              title: "Honeywell CK65",
+              producto: "/assets/images/productos/HONEYWELL-CK65.png",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android 8",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Largo Alcance",
+              icon2: "/assets/images/iconshandheld/lector_ht730.svg",
+              propiedad3: "Ultra Resistente",
+              icon3: "/assets/images/iconshandheld/resistente_ht730.svg",
+              propiedad4: "Batería Extendida",
+              icon4: "/assets/images/iconshandheld/bateria_ht730.svg",
+              propiedad5: "Teclado",
+              icon5: "/assets/images/iconshandheld/teclado_ht730.svg",
+              propiedad6: "Honeywell",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/honeywell-ck65",
+            },
+            {
+              title: "Honeywell CT40",
+              producto: "/assets/images/productos/HONEYWELL-CT40.png",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Pantalla 5",
+              icon2: "/assets/images/iconshandheld/pantalla_ht730.svg",
+              propiedad3: "Buen Scan",
+              icon3: "/assets/images/iconshandheld/lector_ht730.svg",
+              propiedad4: "Mobility Edge",
+              icon4: "/assets/images/iconshandheld/honeywell_ht730.svg",
+              propiedad5: "Ligera",
+              icon5: "/assets/images/iconshandheld/peso_ht730.svg",
+              propiedad6: "Honeywell",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/honeywell-ct40",
+            },
+            {
+              title: "Honeywell EDA51",
+              producto: "/assets/images/productos/HONEYWELL-EDA51.png",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android 8",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Lector 2D",
+              icon2: "/assets/images/iconshandheld/qr.svg",
+              propiedad3: "Ergonómica",
+              icon3: "/assets/images/iconshandheld/ergonomico_ht730.svg",
+              propiedad4: "Pantalla 5",
+              icon4: "/assets/images/iconshandheld/pantalla_ht730.svg",
+              propiedad5: "Cámara",
+              icon5: "/assets/images/iconshandheld/camara_ht730.svg",
+              propiedad6: "Honeywell",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/honeywell-eda51",
+            },
+            {
+              title: "Unitech EA520",
+              producto: "/assets/images/productos/UNITECH-EA520.png",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android 11",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Lector 2D",
+              icon2: "/assets/images/iconshandheld/qr.svg",
+              propiedad3: "IP67",
+              icon3: "/assets/images/iconshandheld/ip67_ht730.svg",
+              propiedad4: "Pantalla 5",
+              icon4: "/assets/images/iconshandheld/pantalla_ht730.svg",
+              propiedad5: "Ligera",
+              icon5: "/assets/images/iconshandheld/peso_ht730.svg",
+              propiedad6: "Unitech",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/unitech-ea520",
+            },
+            {
+              title: "Unitech HT730",
+              producto: "/assets/images/productos/UNITECH-HT730.png",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android 10",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Largo Alcance",
+              icon2: "/assets/images/iconshandheld/lector_ht730.svg",
+              propiedad3: "Hot-Swap",
+              icon3: "/assets/images/iconshandheld/bateria_ht730.svg",
+              propiedad4: "IP67",
+              icon4: "/assets/images/iconshandheld/ip67_ht730.svg",
+              propiedad5: "Teclado",
+              icon5: "/assets/images/iconshandheld/teclado_ht730.svg",
+              propiedad6: "Unitech",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/unitech-ht730",
+            },
+            {
+              title: "Unitech PA768",
+              producto: "/assets/images/productos/UNITECH-PA768.png",
+              fondo: "/assets/images/Fondos/fondo1.webp",
+              propiedad1: "Android 12",
+              icon1: "/assets/images/iconshandheld/android_ht730.svg",
+              propiedad2: "Largo Alcance",
+              icon2: "/assets/images/iconshandheld/lector_ht730.svg",
+              propiedad3: "Conexión 5G",
+              icon3: "/assets/images/iconshandheld/5g_ht730.svg",
+              propiedad4: "IP68",
+              icon4: "/assets/images/iconshandheld/ip67_ht730.svg",
+              propiedad5: "Pantalla Grande",
+              icon5: "/assets/images/iconshandheld/pantalla_ht730.svg",
+              propiedad6: "Unitech",
+              icon6: "@/images/intelisystemsLogo.png",
+              url: "https://intelisystems.mx/products/unitech-pa768",
+            },
+          ]}
+        />
+      </Container>
+    </section>
+    <DispExt
+      device1="IMPRESORAS INDUSTRIALES"
+      device2="IMPRESORAS PORTÁTILES"
+      device3="LECTORES DE CÓDIGO DE BARRAS"
+      des1="Fill out the form and the algorithm will offer the right team of experts"
+      des2="Fill out the form and the algorithm will offer the right team of experts"
+      des3="Fill out the form and the algorithm will offer the right team of experts"
+      link1="/renta_impresoras"
+      link2="/renta_impresoras"
+      link3="/renta_lectores_de_codigos_de_barras"
+    />
+    <Otros className="py-6 md:py-8 animate-fade-in" />
+    <Carrusel client:load />
+    <FAQ className="py-6 md:py-8 animate-fade-in" />
+    <CTA className="py-10 md:py-16 animate-fade-in" />
+  </main>
+</Layout>
