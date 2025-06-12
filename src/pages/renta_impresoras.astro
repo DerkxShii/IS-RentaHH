@@ -19,7 +19,10 @@ import Hero2 from "@src/components/sections/Hero2.astro";
   title="Renta de Impresoras | Renta de Impresoras Portátiles | Renta de Impresoras Industriales | HandHeld Repair | Intelisystems"
 >
   <main class="flex flex-col overflow-hidden">
-    <Hero2 title="IMPRESORAS" />
+    <Hero2
+      title="IMPRESORAS"
+      video="/assets/images/video/FONDO RENTA IMPRESORA.mp4"
+    />
     <!-- <Solutions className="pt-10 md:pt-16" /> -->
     <section
       id="products"
@@ -48,7 +51,8 @@ import Hero2 from "@src/components/sections/Hero2.astro";
           items={[
             {
               title: "Zebra QLN220",
-              producto: "/assets/images/productos/ZEBRA-QLN220.png",
+              producto:
+                "https://intelisystems.mx/_astro/2_zebraqln220.BPfLKK4Z_2nduTY.avif",
               fondo: "/assets/images/Fondos/fondo1.webp",
               propiedad1: "Móvil",
               icon1: "/assets/images/iconshandheld/impresora.svg",
@@ -66,14 +70,15 @@ import Hero2 from "@src/components/sections/Hero2.astro";
             },
             {
               title: "Zebra QLN320",
-              producto: "/assets/images/productos/ZEBRA-QLN320.png",
-              fondo: "/assets/images/Fondos/fondo1.webp",
+              producto:
+                "https://intelisystems.mx/_astro/qln320.BqUAKJ3l_Z1mfP53.avif",
+              fondo: "/assets/images/Fondos/fondo2.webp",
               propiedad1: "Móvil TD",
               icon1: "/assets/images/iconshandheld/impresora.svg",
               propiedad2: "Ancho 3'",
               icon2: "/assets/images/iconshandheld/ancho_impresion.svg",
               propiedad3: "Bluetooth",
-              icon3: "/assets/images/iconshandheld/conectividad.svg",
+              icon3: "/assets/images/iconshandheld/Bluetooth.svg",
               propiedad4: "203 dpi",
               icon4: "/assets/images/iconshandheld/resolucion.svg",
               propiedad5: "Red",
@@ -84,14 +89,15 @@ import Hero2 from "@src/components/sections/Hero2.astro";
             },
             {
               title: "Zebra QLN420",
-              producto: "/assets/images/productos/ZEBRA-QLN420.png",
-              fondo: "/assets/images/Fondos/fondo1.webp",
+              producto:
+                "https://intelisystems.mx/_astro/qln420.DYbuZif1_a2Onh.avif",
+              fondo: "/assets/images/Fondos/fondo3.webp",
               propiedad1: "Móvil TD",
               icon1: "/assets/images/iconshandheld/impresora.svg",
               propiedad2: "Ancho 4'",
               icon2: "/assets/images/iconshandheld/ancho_impresion.svg",
-              propiedad3: "LAN",
-              icon3: "/assets/images/iconshandheld/conectividad.svg",
+              propiedad3: "Velocidad",
+              icon3: "/assets/images/iconshandheld/velocidad_impresion.svg",
               propiedad4: "203 dpi",
               icon4: "/assets/images/iconshandheld/resolucion.svg",
               propiedad5: "Inalámbrica",
@@ -102,8 +108,9 @@ import Hero2 from "@src/components/sections/Hero2.astro";
             },
             {
               title: "Zebra ZQ630",
-              producto: "/assets/images/productos/ZEBRA-ZQ630.png",
-              fondo: "/assets/images/Fondos/fondo1.webp",
+              producto:
+                "https://intelisystems.mx/_astro/zq630.3Wn1yZwx_Z1c3ldV.avif",
+              fondo: "/assets/images/Fondos/fondo4.webp",
               propiedad1: "Móvil RFID",
               icon1: "/assets/images/iconshandheld/impresora_rfid.svg",
               propiedad2: "Ancho 4'",
@@ -120,8 +127,9 @@ import Hero2 from "@src/components/sections/Hero2.astro";
             },
             {
               title: "Zebra ZT230",
-              producto: "/assets/images/productos/ZEBRA-ZT230.png",
-              fondo: "/assets/images/Fondos/fondo1.webp",
+              producto:
+                "https://intelisystems.mx/_astro/4_zebraZT230.Bc7amr55_ZDkQqV.avif",
+              fondo: "/assets/images/Fondos/fondo5.webp",
               propiedad1: "Etiquetas",
               icon1: "/assets/images/iconshandheld/impresora.svg",
               propiedad2: "Ancho 4'",
@@ -138,8 +146,9 @@ import Hero2 from "@src/components/sections/Hero2.astro";
             },
             {
               title: "Zebra ZT410",
-              producto: "/assets/images/productos/ZEBRA-ZT410.png",
-              fondo: "/assets/images/Fondos/fondo1.webp",
+              producto:
+                "https://intelisystems.mx/_astro/zt410.CvBjTpS4_2qctCY.avif",
+              fondo: "/assets/images/Fondos/fondo6.webp",
               propiedad1: "Industrial",
               icon1: "/assets/images/iconshandheld/industrial.svg",
               propiedad2: "Ancho 4'",
@@ -156,8 +165,9 @@ import Hero2 from "@src/components/sections/Hero2.astro";
             },
             {
               title: "Zebra ZT411",
-              producto: "/assets/images/productos/ZEBRA-ZT411.png",
-              fondo: "/assets/images/Fondos/fondo1.webp",
+              producto:
+                "https://intelisystems.mx/_astro/3_zebraZT411.DQ_ALbaL_Z1hxHGS.avif",
+              fondo: "/assets/images/Fondos/fondo7.webp",
               propiedad1: "Industrial",
               icon1: "/assets/images/iconshandheld/industrial.svg",
               propiedad2: "Velocidad 14",
@@ -177,15 +187,18 @@ import Hero2 from "@src/components/sections/Hero2.astro";
       </Container>
     </section>
     <DispExt
-      device1="HANDHELDS"
-      device2="TERMINALES PORTÁTILES"
+      device1="INICIO"
+      device2="TERMINALES PORTATILES HANDHELD"
       device3="LECTORES DE CÓDIGO DE BARRAS"
       des1="Optimiza tu inventario y operaciones logísticas. Nuestros equipos de última generación garantizan precisión y eficiencia en cada tarea."
       des2="Potencia la gestión de tu negocio. Ofrecemos eficiencia y control para inventario, ventas y más, todo en un dispositivo robusto y fácil de usar."
       des3="Captura de datos rápida y sin errores. Agiliza tus procesos de entrada, salida y control de existencias con la máxima precisión."
-      link1="/renta_handheld"
-      link2="/renta_impresoras"
+      link1="/"
+      link2="/renta_handheld"
       link3="/renta_lectores_de_codigos_de_barras"
+      image1="/assets/images/resume/1 inicio-1.jpg"
+      image2="/assets/images/resume/2 handheld-1.jpg"
+      image3="/assets/images/resume/5 lector de barras-1.jpg"
     />
     <Otros className="py-6 md:py-8 animate-fade-in" />
     <Carrusel client:load />

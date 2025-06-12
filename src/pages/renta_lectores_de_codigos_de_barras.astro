@@ -19,7 +19,10 @@ import Hero2 from "@src/components/sections/Hero2.astro";
   title="Renta de Lectores de Códigos de Barras | HandHeld Repair | Intelisystems"
 >
   <main class="flex flex-col overflow-hidden">
-    <Hero2 title="LECTORES DE CÓDIGO DE BARRAS" />
+    <Hero2
+      title="LECTORES DE CÓDIGO DE BARRAS"
+      video="/assets/images/video/FONDO RENTA LECTORES.mp4"
+    />
     <!-- <Solutions className="pt-10 md:pt-16" /> -->
     <section
       id="products"
@@ -48,8 +51,9 @@ import Hero2 from "@src/components/sections/Hero2.astro";
           items={[
             {
               title: "Zebra LS3578",
-              producto: "/assets/images/productos/ZEBRA-LS3578-ER.webp",
-              fondo: "/assets/images/Fondos/fondo1.webp",
+              producto:
+                "https://intelisystems.mx/_astro/ls3578.BP0-faWt_aoqaC.avif",
+              fondo: "/assets/images/Fondos/fondo4.webp",
               propiedad1: "Inalámbrico",
               icon1: "/assets/images/iconshandheld/lector_inalambrico.svg",
               propiedad2: "Fuzzy Logic",
@@ -66,16 +70,17 @@ import Hero2 from "@src/components/sections/Hero2.astro";
             },
             {
               title: "Zebra LS4278",
-              producto: "/assets/images/productos/ZEBRA-LS4278.webp",
-              fondo: "/assets/images/Fondos/fondo1.webp",
+              producto:
+                "https://intelisystems.mx/_astro/ls4278.BkfnBeON_3RGTL.avif",
+              fondo: "/assets/images/Fondos/fondo6.webp",
               propiedad1: "Inalámbrico",
               icon1: "/assets/images/iconshandheld/lector_inalambrico.svg",
-              propiedad2: "Alto Rendimiento",
+              propiedad2: "Eficiente",
               icon2: "/assets/images/iconshandheld/rendimiento.svg",
               propiedad3: "Bluetooth 15",
               icon3: "/assets/images/iconshandheld/Bluetooth.svg",
               propiedad4: "Multi-línea",
-              icon4: "/assets/images/iconshandheld/lector_omnidireccional.svg",
+              icon4: "/assets/images/iconshandheld/lector_omnidirectional.svg",
               propiedad5: "Preciso",
               icon5: "/assets/images/iconshandheld/lector.svg",
               propiedad6: "Zebra",
@@ -87,7 +92,7 @@ import Hero2 from "@src/components/sections/Hero2.astro";
       </Container>
     </section>
     <DispExt
-      device1="HANDHELD Y TERMINALES PORTÁTILES"
+      device1="TERMINALES PORTATILES HANDHELD"
       device2="IMPRESORAS INDUSTRIALES"
       device3="IMPRESORAS PORTÁTILES"
       des1="Optimiza tu inventario y operaciones logísticas. Nuestros equipos de última generación garantizan precisión y eficiencia en cada tarea."
@@ -96,6 +101,9 @@ import Hero2 from "@src/components/sections/Hero2.astro";
       link1="/renta_handheld"
       link2="/renta_impresoras"
       link3="/renta_impresoras"
+      image1="/assets/images/resume/2 handheld-1.jpg"
+      image2="/assets/images/resume/4 impresora industrial-1.jpg"
+      image3="/assets/images/resume/3 impresora portatil-1.jpg"
     />
     <Otros className="py-6 md:py-8 animate-fade-in" />
     <Carrusel client:load />
